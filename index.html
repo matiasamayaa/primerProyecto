@@ -46,16 +46,31 @@ Chau
 </tr>
 </table>
 
-<form action="../form-result.php" target="_blank">
-<p>
-    Nombre <br>
-    <textarea name="Nombre"></textarea>
-    E-Mail <input type="text" name="mail">
-    Mensaje: <input type="text" name="mail">
+<form action="" method="post">
+<fieldset>
+    <legend><h2>Primer formulario</h2></legend>
+    <p>
+    <label>Nombre<input name="Nombre"></input></label>
+    <label>DNI<input name="Nombre"></input></label>
+    <br>
+    <br>
+    <label>E-mail<input type="text" name="mail"></label>
+    <br>
+    <br>
+    <select name="Motivo de la consulta" id="Motivo de la consulta">
+    <option value="C">Examen</option>
+    <option value="P">Estudio</option>
+    </select>  
+    <br>
+    <br>
+    <label>Mensaje<textarea name="Mensaje"></textarea>
     
-    <input type="submit" value="Limpiar">
+    <input type="reset" value="Limpiar">
     <input type="submit" value="Enviar">
+    <input type="button" value="">
+
 </p>     
+</fieldset>
 </form>
 </body>
 </html>
